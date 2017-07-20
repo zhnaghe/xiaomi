@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>小米官网</title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/swiper.js"></script>
+		<script src="js/xiaomi.js"></script>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+		}
+		/*#tou{
+			width: 100%;
+		}*/
+		#tou>img{
+			width: 100%;
+		}
+		#fl1{
+			background-color: #333333;
+			padding: 8px 0px;
+		}
+		#fl1-2{
+			width: 1226px;
+			margin: 0 auto;
+		}
+		#fl1-2-1:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#fl1-2-1>li{
+			float: left;
+			list-style: none;
+			padding: 0px 6px;
+			color: lightgray;
+			border-right: 1px solid lightgray;
+		}
+		#fl1-2-1>li:nth-child(9){
+			float: right;
+			background-color: #424242;
+		}
+		#fl1-2-1>li:nth-child(10){
+			float: right;
+		}
+		#fl1-2-1>li:nth-child(11){
+			float: right;
+		}
+		#fl1-2-1>li:nth-child(12){
+			float: right;
+		}
+		#neir{
+			width: 1226px;
+			margin: 0 auto;
+			/*border-bottom: 1px solid black;*/
+		}
+		#fenlei2{
+			width: 100%;
+			height: 5rem;
+			line-height: 5rem;
+		}
+		#fenlei2-1>li{
+			list-style: none;
+			float: left;
+			height: 5rem;
+			margin: 0px 10px;
+			
+		}
+		#fenlei2-1>li>img{
+			height: 60%;
+			margin-top: 20%;
+		}
+		#fenlei2-1>li:hover{
+			color: #F85C58;
+			cursor: pointer;
+		}
+		#fenlei2-1>li:nth-child(1){
+			margin-right: 70px;
+		}
+		#fenlei2-1>li:nth-child(2){
+			margin-right: 70px;
+		}
+		#lilei1>input{
+			width: 200px;
+			height: 2rem;
+			text-align: center;
+		}
+		#fenlei2-1>li:last-child{
+			float: right;
+		}
+		#banner:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#banner>div{
+			float: left;
+			/*height: 300px;*/
+			/*border: 1px solid black;*/
+		}
+		#banner-1{
+			width: 230px;
+		}
+		#banner-1>ul{
+			padding: 14px 0px;
+			background-color: #0C0D0F;
+		}
+		#banner-1 ul>li{
+			height: 3rem;
+			line-height: 3rem;
+			color: lightgray;
+			padding: 0px 20px;
+		}
+		#banner-1 span{
+			float: right;
+		}
+		#banner-1 ul>li:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#banner-2{
+			width: 991px;
+		}
+		#banner-2 img{
+			width: 100%;
+		}
+		#bannerx{
+			width: 100%;
+		}
+		#bannerx{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#bannerx>div{
+			float: left;
+			margin: 4px;
+		}
+		#bannerx-1{
+			width: 235px;
+			background-color: #5F5750;
+			text-align: center;
+			color: white;
+		}
+		#bannerx-1:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#bannerx-1>div{
+			float: left;
+			width: 77px;
+			padding: 11px 0px;
+			font-size: 12px;
+		}
+		.mingx:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		.mingx{
+			text-align: center;
+			margin-top: 20px;
+			
+		}
+		.mingx>div{
+			width: 235px;
+			float: left;
+			margin-right: 10px;
+			padding-top: 30px;
+			border-top: 2px solid red;
+		}
+		.mingx>div:hover{
+			transform: translateY(-4px);
+			box-shadow:2px 2px 20px black;
+			cursor: pointer;
+		}
+		.mingx p{
+			color: gray;
+		}
+		.mingx span{
+			color: orange;
+			line-height: 2rem;
+		}
+		
+		.jiadian{
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+		}
+		.jiadian:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		.jiadian>div:first-child{
+			float: left;
+			font-size: 18px;
+		}
+		.jiadian>div:last-child{
+			float: right;
+		}
+		.jiadian-1:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		
+		.jiadian-1>div{
+			float: left;
+			margin: 0px 10px;
+		}
+		.jiadian-1>div:nth-child(1){
+			color: red;
+			border-bottom: 2px solid red;
+		}
+		
+		.jiadian2:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		.jiadian2{
+			width: 100%;
+		}
+		.jiadian2-2{
+			margin-right: 13px;
+			/*width: 240px;*/
+		}
+		.jiadian2>div>img{
+			height: 520px;
+		}
+		.jiadian2>div{
+			float: left;
+		}
+		/*.jiadian2>div:hover{
+			transform: translateY(-2px);
+		}*/
+		.jiadian2-1{
+			width: 1010px;
+		}
+		.jiadian2-1:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		.jiadian2-1>div{
+			float: left;
+			width: 236px;
+			text-align: center;
+			
+			background-color: white;
+			padding: 29px 0px;
+			margin-right: 15px;
+			margin-bottom: 10px;
+		}
+		.jiadian2-1>div:hover{
+			transform: translateY(-4px);
+			box-shadow:0px 2px 20px black;
+			cursor: pointer;
+		}
+		.jiadian2-1 p{
+			color: gainsboro;
+			font-size: 14px;
+			line-height: 2rem;
+		}
+		.jiadian2-1 img{
+			width: 153px;
+			height: 98px;
+		}
+		.jiadian2-1 h5{
+			line-height: 2rem;
+		}
+		.jiadian2-1 span{
+			color: orange;
+			line-height: 2rem;
+		}
+		/*红色*/
+		.jiadian2-1-1{
+			position: relative;
+		}
+		.jiadian2-1-1>div{
+			position: absolute;
+			top: 0px;
+			left: 90px;
+			color: white;
+			background-color: red;
+			padding: 0px 10px;
+			font-size: 14px;
+		}
+		/*蓝色*/
+		.jiadian2-1-2{
+			position: relative;
+		}
+		.jiadian2-1-2>div{
+			position: absolute;
+			top: 0px;
+			left: 90px;
+			color: white;
+			background-color: greenyellow;
+			padding: 0px 10px;
+			font-size: 14px;
+		}
+		/*黄色*/
+		.jiadian2-1-3{
+			position: relative;
+		}
+		.jiadian2-1-3>div{
+			position: absolute;
+			top: 0px;
+			left: 90px;
+			color: white;
+			background-color: yellow;
+			padding: 0px 10px;
+			font-size: 14px;
+		}
+		.neir2{
+			width: 1226px;
+			background-color: #F5F5F5;
+			/*height: 300px;*/
+			margin: 0 auto;
+			border: white;
+			padding-bottom: 2rem;
+		}
+		/*推荐*/
+		#tuij:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#tuij>div:hover{
+			transform: translateY(-4px);
+			box-shadow:2px 2px 20px black;
+			cursor: pointer;
+		}
+		#tuij>div{
+			float: left;
+			width: 230px;
+			margin-right: 15px;
+			text-align: center;
+			background-color: white;
+			padding: 20px 0px;
+		}
+		#tuij span{
+			color: orange;
+		}
+		/*热评*/
+		#rep:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#rep>div:hover{
+			transform: translateY(-4px);
+			box-shadow:2px 2px 20px black;
+			cursor: pointer;
+		}
+		#rep>div{
+			float: left;
+			width: 290px;
+			margin-right: 15px;
+			/*text-align: center;*/
+			background-color: white;
+			padding: 20px 0px;
+		}
+		#rep span:last-child{
+			color: orange;
+		}
+		#rep p{
+			color: gray;
+		}
+		
+		#lei:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#lei>div{
+			float: left;
+			width: 290px;
+			margin-right: 15px;
+			text-align: center;
+			background-color: white;
+			padding-bottom: 20px;
+		}
+		#lei img{
+			width: 100%;
+		}
+		
+		/*脚部*/
+		#foot{
+			width: 100%;
+			margin-top: 2rem;
+		}
+		#foot>div{
+			width: 1226px;
+			margin: 0 auto;
+		}
+		#foot-1{
+			padding: 10px 0px;
+			border-bottom: 1px solid black;
+		}
+		#foot-1:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#foot-1>li{
+			width: 220px;
+			float: left;
+			text-align: center;
+			font-size: 18px;
+			border-right: 1px solid darkgray;
+		}
+		#foot-2{
+			
+			padding: 2rem 0rem;
+		}
+		#foot-2:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#foot-2>div{
+			float: left;
+		}
+		#foot-2>div:first-child{
+			width: 900px;
+			border-right:1px solid black ;
+			/*background-color: blue;
+			height: 2rem;*/
+		}
+		#foot-2>div:last-child{
+			width: 324px;
+			/*background-color: yellow;
+			height: 2rem;*/
+		}
+		.foot-3{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		.foot-3>div{
+			float: left;
+			width: 150px;
+			text-align: center;
+		}
+		.foot-3>div:first-child{
+			font-size: 18px;
+		}
+		#foot-3:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		#foot-3{
+			padding-top: 1rem;
+		}
+		#foot-3>div{
+			float: left;
+		}
+		#foot-3>div:nth-child(2){
+			width: 700px;
+			margin-left: 20px;
+		}
+		.hali{
+			position: relative;
+			height: 340px;
+		}
+		.yuand{
+			position: absolute;
+			bottom: 20px;
+			left: 120px;
+		}
+		.yuand:after{
+			display:block;
+			clear:both;
+			content:"";
+		}
+		.yuand>div{
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: gray;
+			float: left;
+			margin: 5px;
+		}
+		.yuand>div:first-child{
+			border: 2px solid orange;
+			background-color: white;
+			margin-top: 3px;
+		}
+		#bannerhover>li:hover{
+			background-color: #F7343C;
+			cursor: pointer;
+		}
+		#banner-1{
+			position: relative;
+		}
+		.absolute{
+			width: 500px;
+			height: 460px;
+			position: absolute;
+			top: 0px;
+			left: 230px;
+			background-color: white;
+			z-index: 2;
+			display: none;
+		}
+		.show{
+			display: block;
+		}
+	</style>
+	<body>
+		<div id="tou">
+			<img src="img/banner_01.jpg"/>
+		</div>
+		<div id="fl1">
+			<div id="fl1-2">
+				<ul id="fl1-2-1">
+					<li>小米商城</li>
+					<li>MIUI</li>
+					<li>米聊</li>
+					<li>云服务</li>
+					<li>云服务</li>
+					<li>云服务</li>
+					<li>云服务</li>
+					<li>云服务</li>
+					<li>购物车</li>
+					<li>云服务</li>
+					<li>云服务</li>
+					<li>云服务</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="neir">
+			<div id="fenlei2" class="relative">
+				<ul id="fenlei2-1">
+					<li><img src="img/images_04.jpg"/></li>
+					<li><img src="img/images_06.jpg"/></li>
+					<li>小米手机</li>
+					<li>红米</li>
+					<li>红米</li>
+					<li>平板</li>
+					<li>平板</li>
+					<li>平板</li>
+					<li>平板</li>
+					<li>平板</li>
+					<li>平板</li>
+					<li>平板</li>
+					<li id="lilei1"><input type="text" placeholder="电视，小米5c立减200"/></li>
+				</ul>
+				
+			</div>
+			
+			<div id="banner">
+				<div id="banner-1">
+					<ul id="bannerhover">
+						<li class="active li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+						<li class="li1">手机电话卡<span>></span></li>
+					</ul>
+					
+					<div class="absolute show">0</div>
+					<div class="absolute">1</div>
+					<div class="absolute">2</div>
+					<div class="absolute">3</div>
+					<div class="absolute">4</div>
+					<div class="absolute">5</div>
+					<div class="absolute">6</div>
+					<div class="absolute">7</div>
+					<div class="absolute">8</div>
+					
+				</div>
+				<div class="swiper-container" id="banner-2">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/images_11.jpg"/></div>
+						<div class="swiper-slide"><img src="img/images_11.jpg"/></div>
+						<div class="swiper-slide"><img src="img/images_11.jpg"/></div>
+						<div class="swiper-slide"><img src="img/images_11.jpg"/></div>
+						<div class="swiper-slide"><img src="img/images_11.jpg"/></div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+			
+			<div id="bannerx">
+				<div id="bannerx-1">
+					<div><img src="img/qie1.png"/>
+						<figcaption>选购手机</figcaption>
+					</div>
+					<div><img src="img/qie1.png"/>
+						<figcaption>选购手机</figcaption>
+					</div>
+					<div><img src="img/qie1.png"/>
+						<figcaption>选购手机</figcaption>
+					</div>
+					<div><img src="img/qie1.png"/>
+						<figcaption>选购手机</figcaption>
+					</div>
+					<div><img src="img/qie1.png"/>
+						<figcaption>选购手机</figcaption>
+					</div>
+					<div><img src="img/qie1.png"/>
+						<figcaption>选购手机</figcaption>
+					</div>
+				</div>
+				<div>
+					<img src="img/images_17.jpg"/>
+				</div>
+				<div>
+					<img src="img/images_17.jpg"/>
+				</div>
+				<div>
+					<img src="img/images_17.jpg"/>
+				</div>
+			</div>
+			
+			<h3>小米明星单品</h3>
+			
+			<div class="mingx">
+				<div>
+					<img src="img/images_23.jpg"/>
+					<figcaption>
+						<h5>红米node 4X</h5>
+						<p>4100超长续航，多彩金属</p>
+						<span>999元起</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_25.jpg"/>
+					<figcaption>
+						<h5>红米node 4X</h5>
+						<p>4100超长续航，多彩金属</p>
+						<span>999元起</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_27.jpg"/>
+					<figcaption>
+						<h5>红米node 4X</h5>
+						<p>4100超长续航，多彩金属</p>
+						<span>999元起</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_29.jpg"/>
+					<figcaption>
+						<h5>红米node 4X</h5>
+						<p>4100超长续航，多彩金属</p>
+						<span>999元起</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_31.jpg"/>
+					<figcaption>
+						<h5>红米node 4X</h5>
+						<p>4100超长续航，多彩金属</p>
+						<span>999元起</span>
+					</figcaption>
+				</div>
+			</div>
+			
+			
+			
+			
+		</div>
+		
+		<div class="neir2">
+			<!--家电-->
+			<div class="jiadian">
+				<div><b>家电</b></div>
+				<div class="jiadian-1">
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+				</div>
+			</div>
+			
+			<div class="jiadian2">
+				<div class="jiadian2-2">
+					<img src="img/images_38.jpg"/>
+				</div>
+				<div class="jiadian2-1">
+					<div class="jiadian2-1-1">
+						<img src="img/images_40.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/images_173.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_43.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_43.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div class="jiadian2-1-2">
+						<img src="img/images_50.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/images_53.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_54.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_56.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+				</div>
+			</div>
+			
+			<!--智能-->
+			<div class="jiadian">
+				<div><b>智能</b></div>
+				<div class="jiadian-1">
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+				</div>
+			</div>
+			
+			<div class="jiadian2">
+				<div class="jiadian2-2" style="width: 200px;">
+					<img src="img/images_65.jpg"/ style="width: 200px;height: 257px;">
+					<img src="img/images_79.jpg"/ style="width: 200px;height: 257px;">
+				</div>
+				<div class="jiadian2-1">
+					<div>
+						<img src="img/images_67.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						
+					</div>
+					<div>
+						<img src="img/images_69.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div class="jiadian2-1-2">
+						<img src="img/images_70.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div class="jiadian2-1-2">
+						<img src="img/image_03.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div class="jiadian2-1-2">
+						<img src="img/image_05.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/image_07.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_56.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--搭配-->
+			<div class="jiadian">
+				<div><b>搭配</b></div>
+				<div class="jiadian-1">
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+				</div>
+			</div>
+			
+			<div class="jiadian2">
+				<div class="jiadian2-2" style="width: 200px;">
+					<img src="img/images_65.jpg"/ style="width: 200px;height: 257px;">
+					<img src="img/images_79.jpg"/ style="width: 200px;height: 257px;">
+				</div>
+				<div class="jiadian2-1">
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div class="jiadian2-1-1">
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_56.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+				</div>
+			</div>
+			
+			<!--配件-->
+			<div class="jiadian">
+				<div><b>配件</b></div>
+				<div class="jiadian-1">
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+				</div>
+			</div>
+			
+			<div class="jiadian2">
+				<div class="jiadian2-2" style="width: 200px;">
+					<img src="img/images_65.jpg"/ style="width: 200px;height: 257px;">
+					<img src="img/images_79.jpg"/ style="width: 200px;height: 257px;">
+				</div>
+				<div class="jiadian2-1">
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div class="jiadian2-1-1">
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_56.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+				</div>
+			</div>
+			
+			<!--周边-->
+			<div class="jiadian">
+				<div><b>周边</b></div>
+				<div class="jiadian-1">
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+					<div>热门</div>
+				</div>
+			</div>
+			
+			<div class="jiadian2">
+				<div class="jiadian2-2" style="width: 200px;">
+					<img src="img/images_65.jpg"/ style="width: 200px;height: 257px;">
+					<img src="img/images_79.jpg"/ style="width: 200px;height: 257px;">
+				</div>
+				<div class="jiadian2-1">
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						
+					</div>
+					<div class="jiadian2-1-3">
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div class="jiadian2-1-3">
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div class="jiadian2-1-3">
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+						<div>享9折</div>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_72.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+					<div>
+						<img src="img/images_56.jpg"/>
+						<figcaption>
+							<h5>小米电视</h5>
+							<p>7-1 7-3 直降300</p>
+							<span>2299元起</span>
+						</figcaption>
+					</div>
+				</div>
+			</div>
+			
+			<h3>为您推荐</h3>
+			
+			<div id="tuij">
+				<div>
+					<img src="img/images_175.jpg"/>
+					<figcaption>
+						<h4>Amaz 运动手表</h4>
+						<span>799元</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_175.jpg"/>
+					<figcaption>
+						<h4>Amaz 运动手表</h4>
+						<span>799元</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_175.jpg"/>
+					<figcaption>
+						<h4>Amaz 运动手表</h4>
+						<span>799元</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_175.jpg"/>
+					<figcaption>
+						<h4>Amaz 运动手表</h4>
+						<span>799元</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/images_175.jpg"/>
+					<figcaption>
+						<h4>Amaz 运动手表</h4>
+						<span>799元</span>
+					</figcaption>
+				</div>
+			</div>
+			
+			<h3>热评产品</h3>
+			
+			<div id="rep">
+				<div>
+					<img src="img/img_03.jpg"/ style="width: 100%;">
+					<figcaption>
+						<h4>渴望你是你是啊你来看什么道理 啦什么的离开凉快撒打算了的离开ask的距离喀什灯笼裤</h4>
+						<p>来自甜蜜的评论</p>
+						<span>小米随身蓝牙音频</span>
+						<span>799元</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/img_05.jpg"/ style="width: 100%;">
+					<figcaption>
+						<h4>渴望你是你是啊你来看什么道理 啦什么的离开凉快撒打算了的离开ask的距离喀什灯笼裤</h4>
+						<p>来自甜蜜的评论</p>
+						<span>小米随身蓝牙音频</span>
+						<span>799元</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/img_07.jpg"/ style="width: 100%;">
+					<figcaption>
+						<h4>渴望你是你是啊你来看什么道理 啦什么的离开凉快撒打算了的离开ask的距离喀什灯笼裤</h4>
+						<p>来自甜蜜的评论</p>
+						<span>小米随身蓝牙音频</span>
+						<span>799元</span>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/img_09.jpg"/ style="width: 100%;">
+					<figcaption>
+						<h4>渴望你是你是啊你来看什么道理 啦什么的离开凉快撒打算了的离开ask的距离喀什灯笼裤</h4>
+						<p>来自甜蜜的评论</p>
+						<span>小米随身蓝牙音频</span>
+						<span>799元</span>
+					</figcaption>
+				</div>
+			</div>
+			
+			
+			<h3>内容</h3>
+			
+			<div class="mingx">
+				
+				<div class="hali" style="width: 290px;">
+					<figcaption>
+						<span style="color: orange;">图书</span>
+						<h5>哈利波特与被诅咒的孩子</h5>
+						<p>的内存空间是，没女生都i请问三大框架撒旦哈哈悲剧啊</p>
+						<span style="color: black;">99元</span>
+					</figcaption>
+					<img src="img/halibote.png"/>
+					<div class="yuand">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="hali" style="width: 290px;">
+					<figcaption>
+						<span style="color: orange;">图书</span>
+						<h5>哈利波特与被诅咒的孩子</h5>
+						<p>的内存空间是，没女生都i请问三大框架撒旦哈哈悲剧啊</p>
+						<span style="color: black;">99元</span>
+					</figcaption>
+					<img src="img/halibote.png"/>
+					<div class="yuand">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="hali" style="width: 290px;">
+					<figcaption>
+						<span style="color: orange;">图书</span>
+						<h5>哈利波特与被诅咒的孩子</h5>
+						<p>的内存空间是，没女生都i请问三大框架撒旦哈哈悲剧啊</p>
+						<span style="color: black;">99元</span>
+					</figcaption>
+					<img src="img/halibote.png"/>
+					<div class="yuand">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="hali" style="width: 290px;">
+					<figcaption>
+						<span style="color: orange;">图书</span>
+						<h5>哈利波特与被诅咒的孩子</h5>
+						<p>的内存空间是，没女生都i请问三大框架撒旦哈哈悲剧啊</p>
+						<span style="color: black;">99元</span>
+					</figcaption>
+					<img src="img/halibote.png"/>
+					<div class="yuand">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<h3>视频</h3>
+			<div id="lei">
+				<div>
+					<img src="img/img_31.jpg"/>
+					<figcaption>
+						<h4>听雷总讲述7年工艺探索之路</h4>
+						<p>小米6，7年工艺探索的</p>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/img_32.jpg"/>
+					<figcaption>
+						<h4>听雷总讲述7年工艺探索之路</h4>
+						<p>小米6，7年工艺探索的</p>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/img_33.jpg"/>
+					<figcaption>
+						<h4>听雷总讲述7年工艺探索之路</h4>
+						<p>小米6，7年工艺探索的</p>
+					</figcaption>
+				</div>
+				<div>
+					<img src="img/img_34.jpg"/>
+					<figcaption>
+						<h4>听雷总讲述7年工艺探索之路</h4>
+						<p>小米6，7年工艺探索的</p>
+					</figcaption>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<div id="foot">
+			<div>
+				
+				<ul id="foot-1">
+					<li>预约维修服务</li>
+					<li>预约维修服务</li>
+					<li>预约维修服务</li>
+					<li>预约维修服务</li>
+					<li>预约维修服务</li>
+				</ul>
+				
+				<div id="foot-2">
+					<div>
+						<div class="foot-3">
+							<div><b>帮助中心</b></div>
+							<div><b>帮助中心</b></div>
+							<div><b>帮助中心</b></div>
+							<div><b>帮助中心</b></div>
+							<div><b>帮助中心</b></div>
+							<div><b>帮助中心</b></div>
+						</div>
+						<div class="foot-3">
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+						</div>
+						<div class="foot-3">
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+						</div>
+						<div class="foot-3">
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+							<div>帮助中心</div>
+						</div>
+					</div>
+					<div style="text-align: center;">
+						<h3 style="color: orange;">小米客服</h3>
+						<p>24小时全天陪伴</p>
+						<p style="margin-bottom: 10px;">为您解决问题</p>
+						<span style="border: 2px solid orange;color: orange;padding: 3px;">立即开启咨询</span>
+					</div>
+				</div>
+				
+				<div id="foot-3">
+					<div><img src="img/images_04.jpg"/></div>
+					<div>
+						<p>小米商城 | 小米商城 | 小米商城 | 小米商城 | 小米商城 | 小米商城 | 小米商城 | 小米商城 </p>
+						<p>©莫德凯撒可看出三点为彻底我去进口量达</p>
+						<p>©莫德凯撒可看出三点为彻底我去进口量达</p>
+					</div>
+					<div><img src="img/img_40.jpg"/></div>
+					<div><img src="img/img_40.jpg"/></div>
+					<div><img src="img/img_40.jpg"/></div>
+					<div><img src="img/img_40.jpg"/></div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+	</body>
+	<script>
+		
+		new Swiper(".swiper-container",{
+			autoplay:1000,//自动播放
+			loop:true,//循环
+			autoplayDisableOnInteraction:false,//点击后还能轮播
+			pagination:".swiper-pagination",//小圆点
+			paginationClickable:true,//点击圆点  切换
+			prevButton:".swiper-button-prev",//上一页
+			nextButton:".swiper-button-next",//下一页
+			
+		})
+
+	</script>
+</html>
